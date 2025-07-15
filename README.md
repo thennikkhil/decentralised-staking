@@ -1,5 +1,8 @@
 # 🏗 Scaffold-ETH 2
 
+Hey, Nikhil this side! I'm currently learning Ethereum development through the Speedrun Ethereum program. I've just completed the second challenge of buildling a decentralised staking app and created a repo to share my progress. Feel free to check it out—cheers! 🎉
+
+
 <h4 align="center">
   <a href="https://docs.scaffoldeth.io">Documentation</a> |
   <a href="https://scaffoldeth.io">Website</a>
