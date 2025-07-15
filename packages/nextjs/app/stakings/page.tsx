@@ -18,6 +18,7 @@ const Stakings: NextPage = () => {
         <span className="loading loading-spinner loading-lg"></span>
       </div>
     );
+
   return (
     <div className="flex items-center flex-col flex-grow pt-10">
       <div className="px-5">
@@ -41,13 +42,15 @@ const Stakings: NextPage = () => {
                 </td>
               </tr>
             ) : (
-              stakeEvents?.map((event, index) => {
+              stakeEvents.map((event, index) => {
+                const [staker, amount] = event.args as [string, bigint];
+
                 return (
                   <tr key={index}>
                     <td>
-                      <Address address={event.args?.[0]} />
+                      <Address address={staker} />
                     </td>
-                    <td>{formatEther(event.args?.[1] || 0n)} ETH</td>
+                    <td>{formatEther(amount || 0n)} ETH</td>
                   </tr>
                 );
               })
